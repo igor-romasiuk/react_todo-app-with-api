@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { UserWarning } from './UserWarning';
 import { deleteTodo, getTodos, updateTodoStatus, USER_ID } from './api/todos';
+
 import { Todo } from './types/Todo';
 import { TodoList } from './components/TodoList';
 import { TodoState } from './types/TodoState';
+
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+
 import { ErrorField } from './components/ErrorNotification';
 import { getPreparedTodos } from './utils/getPreparedTodos';
 
